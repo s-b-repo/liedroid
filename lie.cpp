@@ -75,7 +75,7 @@ int main() {
                     networks.push_back(essid);
                 }
             }
-
+            deauthblock
             for (const auto& network : networks) {
                 executeCommand("iwconfig wlan0 mode monitor");
                 executeCommand("ifconfig wlan0 down");
