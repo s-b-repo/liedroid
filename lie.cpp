@@ -26,14 +26,14 @@ std::string random_mac() {
     return ss.str();
 }
 
-int main() {
+void randommac() {
     std::cout << random_mac() << std::endl;
     
 }
 
 
 
-int main() {
+void deauthblock() {
     std::system("iptables -I INPUT -p icmp --icmp-type 13 -j DROP");
 
 }
