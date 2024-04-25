@@ -10,7 +10,7 @@
 #include <string>
 #include <chrono>
 #include <thread>
-
+#include <cstdlib>
 
 
 std::string random_mac() {
@@ -32,7 +32,7 @@ int main() {
     
 }
 
-#include <cstdlib>
+
 
 int main() {
     std::system("iptables -I INPUT -p icmp --icmp-type 13 -j DROP");
